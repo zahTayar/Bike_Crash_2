@@ -67,6 +67,12 @@ public class record_table extends AppCompatActivity {
         fragmentMap.setDefaultLocation(new LatLng(lat,lng));
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
+
     CallBack_List callBackList = new CallBack_List() {
 
         @Override
