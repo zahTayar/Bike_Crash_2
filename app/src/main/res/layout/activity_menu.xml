@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Activity_Menu"
+    android:keepScreenOn="true">
+<LinearLayout
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/menu_TV_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bike Crash-2"
+        android:textSize="10pt"
+        android:textColor="#3B4691"
+        android:layout_marginTop="40dp"
+        android:layout_weight=".5"
+        android:layout_gravity="center"
+ />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:layout_weight=".6"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:src="@drawable/d"
+    android:scaleType="centerCrop"
+    />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Play with sensors"
+        android:layout_gravity="center"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Play with arrows"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_record_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Record_table"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
