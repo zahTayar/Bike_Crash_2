@@ -76,79 +76,152 @@ public class Fragment_List extends Fragment {
 
     private void initViews() {
         int amount_of_user_records=eight_selected.size();
-        switch (amount_of_user_records){
-            case 1:
-                tableRows[0].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(0).getLatlocation(),eight_selected.get(0).getLnglocation());
-                    }
-                });
-                break;
-            case 2:
-                tableRows[1].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(1).getLatlocation(),eight_selected.get(1).getLnglocation());
+        if (amount_of_user_records>0){
+            tableRows[0].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(0).getLatlocation(),eight_selected.get(0).getLnglocation());
+                }
+            });
 
-                    }
-                });
-                break;
-            case 3:
-                tableRows[2].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(2).getLatlocation(),eight_selected.get(2).getLnglocation());
-
-                    }
-                });
-                break;
-            case 4:
-                tableRows[3].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(3).getLatlocation(),eight_selected.get(3).getLnglocation());
-
-                    }
-                });
-                break;
-            case 5:
-                tableRows[4].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(4).getLatlocation(),eight_selected.get(4).getLnglocation());
-
-                    }
-                });
-                break;
-            case 6:
-                tableRows[5].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(5).getLatlocation(),eight_selected.get(5).getLnglocation());
-
-                    }
-                });
-                break;
-            case 7:
-                tableRows[6].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(6).getLatlocation(),eight_selected.get(6).getLnglocation());
-
-                    }
-                });
-                break;
-            case 8:
-                tableRows[7].setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        callBackList.setLocationInMap(eight_selected.get(7).getLatlocation(),eight_selected.get(7).getLnglocation());
-
-                    }
-                });
-                break;
         }
+        if (amount_of_user_records>1){
+            tableRows[1].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(1).getLatlocation(),eight_selected.get(1).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>2){
+            tableRows[2].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(2).getLatlocation(),eight_selected.get(2).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>3){
+            tableRows[3].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(3).getLatlocation(),eight_selected.get(3).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>4){
+            tableRows[4].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(4).getLatlocation(),eight_selected.get(4).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>5){
+            tableRows[5].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(5).getLatlocation(),eight_selected.get(5).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>6){
+            tableRows[6].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(6).getLatlocation(),eight_selected.get(6).getLnglocation());
+                }
+            });
+
+        }
+        if (amount_of_user_records>7){
+            tableRows[7].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBackList.setLocationInMap(eight_selected.get(7).getLatlocation(),eight_selected.get(7).getLnglocation());
+                }
+            });
+
+        }
+//
+//        switch (amount_of_user_records){
+//            case 1:
+//                tableRows[0].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(0).getLatlocation(),eight_selected.get(0).getLnglocation());
+//                    }
+//                });
+//                break;
+//            case 2:
+//                tableRows[1].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(1).getLatlocation(),eight_selected.get(1).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 3:
+//                tableRows[2].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(2).getLatlocation(),eight_selected.get(2).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 4:
+//                tableRows[3].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(3).getLatlocation(),eight_selected.get(3).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 5:
+//                tableRows[4].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(4).getLatlocation(),eight_selected.get(4).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 6:
+//                tableRows[5].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(5).getLatlocation(),eight_selected.get(5).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 7:
+//                tableRows[6].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(6).getLatlocation(),eight_selected.get(6).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//            case 8:
+//                tableRows[7].setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        callBackList.setLocationInMap(eight_selected.get(7).getLatlocation(),eight_selected.get(7).getLnglocation());
+//
+//                    }
+//                });
+//                break;
+//        }
     }
 
 
